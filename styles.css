@@ -1,0 +1,65 @@
+body{
+    margin:0;
+}
+#mostrador {
+    display: grid;
+    grid-template-areas: 'header header header '
+                         'section section section '
+                         'aside aside aside'
+                         'footer footer footer';
+    grid-auto-rows: 50vh 100vh 30vh 40vh;            
+    grid-column-gap: 10px;
+    
+
+}
+
+header {
+    grid-area: header;
+    background-color: yellow;
+}
+
+section {
+    grid-area: section;
+    background-color: aquamarine;
+    display: flex;
+    background-position:center;
+    background-size: cover;
+    height: 50vw;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.tabuleiro {
+    background-color: white;
+    width: 360px;
+    height: 360px;
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+
+}
+
+.espaco {
+    width: 120px;
+    height: 120px;
+    border: 2px solid purple;
+    align-items: center;
+    
+}
+
+.espaco img {
+    width: 100%;
+    height: 100%
+}
+
+aside {
+    grid-area: aside;
+    background-color: black;
+}
+
+footer {
+    grid-area: footer;
+    background-color: purple;
+}
